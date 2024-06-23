@@ -21,23 +21,6 @@ displayContacts::displayContacts(const std::vector<Contact> &contacts, QWidget *
     }
 }
 
-displayContacts::displayContacts(QWidget *parent)
-    : QWidget(parent), model(new QStandardItemModel(this)) {
-    ui.setupUi(this);
-    connect(ui.back_button, &QPushButton::clicked, this, &displayContacts::on_backButton_clicked);
-
-    // Load the background image
-    QPixmap bkgnd(":/resources/images/backButton.png");
-    if (!bkgnd.isNull()) {
-        QPixmap scaled = bkgnd.scaled(ui.back_button->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation);
-        QIcon ButtonIcon(scaled);
-        ui.back_button->setIcon(ButtonIcon);
-        ui.back_button->setIconSize(ui.back_button->size());
-    } else {
-        qDebug() << "Error: Image not found!";
-    }
-}
-
 displayContacts::~displayContacts() {
     delete model;
 }
@@ -57,6 +40,9 @@ void displayContacts::setupTableView(const std::vector<Contact> &contacts) {
         items.append(new QStandardItem(QString::fromStdString(contact.getCountry())));
         items.append(new QStandardItem(QString::fromStdString(contact.getNotes())));
         model->appendRow(items);
+
+        // resize columns to fit content
+        ui.contactTable->resizeColumnsToContents();
     }
 
     ui.contactTable->setModel(model);

@@ -14,8 +14,7 @@ class displayContacts : public QWidget
     Q_OBJECT
 
 public:
-    displayContacts(const std::vector<Contact> &contacts, QWidget *parent = nullptr);
-    displayContacts(QWidget *parent = nullptr);
+    displayContacts(const std::vector<Contact> &contacts = {}, QWidget *parent = nullptr);
     void populateContacts(const std::vector<Contact> &contacts);
     void resetTableView();
     ~displayContacts();

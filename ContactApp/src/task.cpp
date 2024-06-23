@@ -1,10 +1,10 @@
+#include <string>
 #include "task.h"
-#include <vector>
 
-using std::vector;
+using std::string;
+
 
 Task::Task() {
-    // Default constructor
     setTaskName(INIT);
     setDescription(INIT);
 }
@@ -24,35 +24,17 @@ Task::~Task() {
 }
 
 void Task::setTaskName(string name) {
-    if (name.length() > maxTaskName_Length) {
-        this->name = name.substr(0, maxTaskName_Length);
-    } else {
-        this->name = name;
-    }
+    this->name = (name.length() > maxTaskName_Length) ? name.substr(0, maxTaskName_Length) : name;
 }
 
-void Task::setTaskID(int taskID) {
-    this->taskID = taskID;
-}
-
-void Task::setDescription(string description) {
-    if (description.length() > maxDescription_Length) {
-        this->description = description.substr(0, maxDescription_Length);
-    } else {
-        this->description = description;
-    }
-}
-
-string Task::getTaskName() {
+string Task::getTaskName() const  {
     return name;
 }
 
-int Task::getTaskID() {
-    return taskID;
+void Task::setDescription(string description) {
+    this->description = (description.length() > maxDescription_Length) ? description.substr(0, maxDescription_Length) : description;
 }
 
-string Task::getDescription() {
+string Task::getDescription() const  {
     return description;
 }
-
-

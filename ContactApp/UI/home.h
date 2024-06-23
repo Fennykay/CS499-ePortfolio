@@ -17,7 +17,9 @@ class home : public QWidget
 
 public:
     explicit home(QWidget *parent = nullptr);
-    QString getSearchField();
+    QString getContactSearchField();
+    QString getAppointmentSearchField();
+    QString getTaskSearchField();
     ~home();
 
 signals:

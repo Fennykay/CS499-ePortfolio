@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.5)
 
 project(ContactApp VERSION 0.1 LANGUAGES CXX)
 
+# Define the source directory variable
+set(PROJECT_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
+set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
+
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
@@ -12,32 +16,36 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
-
+# Define the list of source files using the PROJECT_SOURCE_DIR variable
 set(PROJECT_SOURCES
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/contact.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/contactdatabase.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/task.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/taskservice.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/contactservice.cpp
+    ${PROJECT_SOURCE_DIR}/src/main.cpp
+    ${PROJECT_SOURCE_DIR}/src/contact.cpp
+    ${PROJECT_SOURCE_DIR}/src/contactdatabase.cpp
+    ${PROJECT_SOURCE_DIR}/src/task.cpp
+    ${PROJECT_SOURCE_DIR}/src/displayContacts.cpp
+    ${PROJECT_SOURCE_DIR}/UI/home.cpp
+    ${PROJECT_SOURCE_DIR}/UI/addcontact.cpp
 )
 
 set(HEADERS
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/contact.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/contactdatabase.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/task.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/taskservice.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/contactservice.h
+    ${PROJECT_SOURCE_DIR}/src/contact.h
+    ${PROJECT_SOURCE_DIR}/src/contactdatabase.h
+    ${PROJECT_SOURCE_DIR}/src/task.h
+    ${PROJECT_SOURCE_DIR}/UI/login.h
+    ${PROJECT_SOURCE_DIR}/UI/displayContacts.h
+    ${PROJECT_SOURCE_DIR}/UI/home.h
+    ${PROJECT_SOURCE_DIR}/UI/addcontact.h
 )
 
 set(UIS
-    ${CMAKE_CURRENT_SOURCE_DIR}/UI/login.ui
-    ${CMAKE_CURRENT_SOURCE_DIR}/UI/displayContacts.ui
-    ${CMAKE_CURRENT_SOURCE_DIR}/UI/home.ui
+    ${PROJECT_SOURCE_DIR}/UI/login.ui
+    ${PROJECT_SOURCE_DIR}/UI/displayContacts.ui
+    ${PROJECT_SOURCE_DIR}/UI/home.ui
+    ${PROJECT_SOURCE_DIR}/UI/addcontact.ui
 )
 
 set(RESOURCES
-    ${CMAKE_CURRENT_SOURCE_DIR}/resources.qrc
+    ${PROJECT_SOURCE_DIR}/resources.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -46,11 +54,22 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         src/sqlite3.h
 
-        UI/login.h UI/login.cpp UI/login.ui UI/displayContacts.ui
-        src/contact.h src/contact.cpp src/contactdatabase.h src/contactdatabase.cpp src/task.h src/task.cpp src/taskservice.h src/taskservice.cpp src/contactservice.h src/contactservice.cpp
+        UI/login.h UI/login.cpp UI/login.ui UI/displayContacts.ui UI/addcontact.h UI/addcontact.cpp UI/addcontact.ui
+        src/contact.h src/contact.cpp src/contactdatabase.h src/contactdatabase.cpp src/task.h src/task.cpp
         src/main.cpp src/displayContacts.cpp src/displayContacts.h
         UI/home.h UI/home.cpp UI/home.ui
         resources.qrc
+        UI/displayappointments.h UI/displayappointments.cpp UI/displayappointments.ui
+        src/appointmentdatabase.h src/appointmentdatabase.cpp
+        src/appointment.h src/appointment.cpp
+        UI/mainwindow.h UI/mainwindow.cpp
+        UI/appointmentcard.h UI/appointmentcard.cpp UI/appointmentcard.ui
+        UI/addappointment.h UI/addappointment.cpp UI/addappointment.ui
+        src/taskdatabase.h src/taskdatabase.cpp
+        UI/displaytasks.h UI/displaytasks.cpp UI/displaytasks.ui
+        UI/addtask.h UI/addtask.cpp UI/addtask.ui
+        src/accountdatabase.h src/accountdatabase.cpp
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET ContactApp APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

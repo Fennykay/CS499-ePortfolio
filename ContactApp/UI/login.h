@@ -2,6 +2,7 @@
 #define LOGIN_H
 
 #include "UI/ui_login.h"
+#include "../src/accountdatabase.h"
 #include <QWidget>
 
 namespace Ui {
@@ -16,20 +17,20 @@ public:
     explicit login(QWidget *parent = nullptr);
     ~login();
 
-    // Customization methods
-    void setWindowTitle(const QString &title);
-    void setPlaceholderText(const QString &usernamePlaceholder, const QString &passwordPlaceholder);
-
 signals:
     void loginSuccessful(const QString &username);
     void loginFailed(const QString &errorMessage);
     void loginCancelled();
 
+    void createAccount();
+
 private slots:
     void on_loginButton_clicked();
+    void on_createAccountButton_clicked();
 
 private:
     Ui::login *ui;
+    AccountDatabase accountDb;
 };
 
 #endif // LOGIN_H
