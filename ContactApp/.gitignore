@@ -1,0 +1,82 @@
+# Ignore build directories
+build/
+Build/
+BUILD/
+
+# Ignore Qt generated files
+*.moc
+*.qrc
+*.ui
+*.qmlc
+*.qmltypes
+Makefile
+
+# Ignore IDE specific files
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.creator.user
+*.creator.user.*
+*.creator.cdb
+*.creator.cdb.*
+*.autosave
+.idea/
+.vscode/
+*.DS_Store
+
+# Ignore OS-specific files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Ignore temporary files
+*.tmp
+*.log
+*.bak
+*.swp
+
+# Ignore binary files
+*.exe
+*.dll
+*.so
+*.o
+*.a
+*.out
+
+# Ignore coverage files
+*.gcda
+*.gcno
+*.gcov
+*.vsidx
+# Ignore Visual Studio IntelliSense files
+.vs/
+.vscode/
+*.vsidx
+*.VC.db
+*.VC.VC.opendb
+*.VC.VC.db-shm
+*.VC.VC.db-wal
+
+# Ignore Visual Studio build files
+*.tlog
+*.log
+*.obj
+*.pch
+*.idb
+*.pdb
+*.ipch
+*.aps
+*.ncb
+*.sdf
+*.opendb
+*.opensdf
+*.VC.db
+
+# Ignore build directories
+Build/
+Debug/
+Release/
+x64/
+bin/
+obj/

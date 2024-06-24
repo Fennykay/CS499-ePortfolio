@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\src\contact.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\src\contactdatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\src\task.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\src\taskservice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\src\contactservice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\UI\login.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\src\displayContacts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\UI\home.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\EWIEGA46WW\qrc_resources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\src\sqlite3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\UI\login.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\src\Contact.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\src\contactdatabase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\src\task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\src\taskservice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\src\contactservice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\src\displayContacts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\UI\home.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\include_Debug\UI\ui_login.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\include_Debug\UI\ui_displayContacts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\include_Debug\UI\ui_home.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\include_Release\UI\ui_login.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\include_Release\UI\ui_displayContacts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\include_Release\UI\ui_home.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\include_MinSizeRel\UI\ui_login.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\include_MinSizeRel\UI\ui_displayContacts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\include_MinSizeRel\UI\ui_home.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\include_RelWithDebInfo\UI\ui_login.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\include_RelWithDebInfo\UI\ui_displayContacts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\include_RelWithDebInfo\UI\ui_home.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\CMakeFiles\b1c64c8fd53fa2ecf5301259f4f69a9d\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\CMakeFiles\c61fa0781b7f8dce896defb52a149840\qrc_resources.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\UI\login.ui" />
+    <None Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\UI\displayContacts.ui" />
+    <None Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\UI\home.ui" />
+    <None Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\resources.qrc" />
+    <None Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\src\test" />
+    <None Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\autouic_Debug.stamp" />
+    <None Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\autouic_Release.stamp" />
+    <None Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\ContactApp_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{90BFDE99-154E-375B-ADCC-2ED5064191EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F59A61EE-4638-3C67-9D94-5B4548200093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{17979F72-B1E4-324A-A92E-27347B725DCA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

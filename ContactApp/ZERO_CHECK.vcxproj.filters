@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\fanch\OneDrive\Documents\CS499\fennykay.github.io\ContactApp\CMakeFiles\8c8e1121e36167efefdee19a8c735bab\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{90BFDE99-154E-375B-ADCC-2ED5064191EE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
